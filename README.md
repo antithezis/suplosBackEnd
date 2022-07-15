@@ -29,7 +29,7 @@ Prueba suplos desarrollador backend
 
 6. Copiar y ejecutar el contenido que se encuentra en el diretorio [suplosBackEnd/bd/structure.sql].
 
-7. Una vez creadas las tablas necesarias abrir el link localhost/suplosBackEnd/insertarJson.php para insertar los registros a las tablas desde el archivo data-1.json
+7. Una vez creadas las tablas necesarias abrir la ruta [localhost/suplosBackEnd/insertarJson.php] para insertar los registros a las tablas desde el archivo data-1.json
 
 8. Inmediatamente será dirigido a la página principal del aplicativo
 
