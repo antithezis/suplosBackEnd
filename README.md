@@ -3,7 +3,7 @@ Prueba suplos desarrollador backend
 
 ### Versiones usadas
 
-+ PHP 7.14.26
++ PHP 7.4.26
 + MySQL 8.0.27
 + MariaDB 10.5.6
 + Apache 2.4.51
