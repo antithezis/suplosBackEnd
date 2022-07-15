@@ -1,37 +1,36 @@
 # suplosBackEnd
 Prueba suplos desarrollador backend
 
-<a href="https://www.buymeacoffee.com/PuneethReddyHC" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="195" height="55"></a>
+### Versiones usadas
 
-# Instalación
+PHP 7.14.26
+MySQL 8.0.27
+MariaDB 10.5.6
+Apache 2.4.51
+
+## Instalación
 
 1. Instalar XAMPP or WAMPP.
 
-2. Abrir el Panel de control de XAMPP e iniciar [apache] & [mysql] .
+2. Abrir el Panel de control de XAMPP e iniciar [apache] & [mysql] O inicar Wampserver.
 
-3. Download project from github(https://github.com/PuneethReddyHC/online-shopping-system-with-advanced-admin-page.git)  
-    OR follow gitbash commands
+3. Descargar el proyecto dede github(https://github.com/antithezis/suplosBackEnd)  
+    O seguir los comandos gitbash 
     
     i>cd C:\\xampp\htdocs\
-    
-    ii>git clone https://github.com/PuneethReddyHC/online-shopping-system-with-advanced-admin-page.git
-    
-4. extract files in C:\\xampp\htdocs\.
+    o
+    i>cd C:\\wamp64\www\
 
-5. open link localhost/phpmyadmin
+    i>git clone https://github.com/antithezis/suplosBackEnd
 
-6. click on new at side navbar.
+4. Abrir el link localhost/phpmyadmin
 
-7. give a database name as (onlineshop) hit on create button.
+5. Seleccionar la pestaña 'SQL' para poder ingresar código SQL
 
-8. after creating database name click on import.
+6. Copiar y ejecutar el contenido que se encuentra en el diretorio [suplosBackEnd/bd/structure.sql].
 
-9. browse the file in directory[online-shopping-system-with-advanced-admin-page/database/onlineshop.sql].
+7. Una vez creadas las tablas necesarias abrir el link localhost/suplosBackEnd/insertarJson.php para insertar los registros a las tablas desde el archivo data-1.json
 
-10. after importing successfully.
+8. Inmediatamente será dirigido a la página principal del aplicativo
 
-11. open any browser and type http://localhost/online-shopping-system-with-advanced-admin-page-master.
 
-12. first register and then login
-
-13. admin login details  Email=admin@gmail.com or username = admin and Password=123456789.

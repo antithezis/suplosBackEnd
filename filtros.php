@@ -5,7 +5,6 @@ $selectCiudad = $connection->prepare("SELECT * FROM ciudad");
 $selectCiudad->execute();
 $listCiudades = $selectCiudad->fetchAll(PDO::FETCH_ASSOC);
 
-
 $selectTipo = $connection->prepare("SELECT * FROM bien_tipo");
 $selectTipo->execute();
 $listTipos = $selectTipo->fetchAll(PDO::FETCH_ASSOC);
@@ -32,9 +31,7 @@ $listTipos = $selectTipo->fetchAll(PDO::FETCH_ASSOC);
                 <p><label for="selecTipo">Tipo:</label></p>
                 <br>
                 <select name="tipo" id="selectTipo">
-
                     <option value=""> Elige un tipo </option>
-
                     <?php
                     foreach ($listTipos as $tipo) { ?>
                         <option value=<?php echo $tipo['id']; ?>> <?php echo $tipo['tipo']; ?> </option>

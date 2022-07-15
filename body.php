@@ -26,13 +26,13 @@ require_once("./db.php");
       </div>
 
       <div id="tabs-2">
-      <?php
+        <?php
         include('./bienesGuardados.php')
         ?>
       </div>
 
       <div id="tabs-3">
-      <?php
+        <?php
         include('./reporte.php')
         ?>
       </div>

@@ -42,3 +42,15 @@ ADD CONSTRAINT `fk_bien_ciudad`
   REFERENCES `ciudad` (`id`)
   ON DELETE NO ACTION
   ON UPDATE NO ACTION;
+
+
+INSERT INTO `ciudad` (`id`, `ciudad`) VALUES ('1', 'New York');
+INSERT INTO `ciudad` (`id`, `ciudad`) VALUES ('2', 'Orlando');
+INSERT INTO `ciudad` (`id`, `ciudad`) VALUES ('3', 'Los Angeles');
+INSERT INTO `ciudad` (`id`, `ciudad`) VALUES ('4', 'Houston');
+INSERT INTO `ciudad` (`id`, `ciudad`) VALUES ('5', 'Washington');
+INSERT INTO `ciudad` (`id`, `ciudad`) VALUES ('6', 'Miami');
+
+INSERT INTO `bien_tipo` (`id`, `tipo`) VALUES ('1', 'Casa');
+INSERT INTO `bien_tipo` (`id`, `tipo`) VALUES ('2', 'Casa de Campo');
+INSERT INTO `bien_tipo` (`id`, `tipo`) VALUES ('3', 'Apartamento');

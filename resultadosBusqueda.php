@@ -1,5 +1,7 @@
 <?php
 
+// Implementación de los filtros incluído el de rango de precio
+
 require_once("./db.php");
 include('./header.php');
 
@@ -37,7 +39,6 @@ if ($tipoFiltro != null and $ciudadFiltro != null) {
 
 $selectBien->execute();
 $listBienes = $selectBien->fetchAll(PDO::FETCH_ASSOC);
-
 
 ?>
 
@@ -78,8 +79,6 @@ foreach ($listBienes as $bien) { ?>
                             GUARDAR
                         </a>
                     <?php } ?>
-
-
                 </form>
             </div>
         </div>

@@ -1,9 +1,10 @@
 <?php
 require_once('./db.php');
 
-function floatvalue($val){
+function floatvalue($val)
+{
     $val = preg_replace('([$])', '', $val);
-    $val = str_replace(",",".",$val);
+    $val = str_replace(",", ".", $val);
     return floatval($val);
 }
 
@@ -50,7 +51,7 @@ foreach ($data as $row) {
     $codigo_postal = $row['Codigo_Postal'];
     $precio = floatvalue($row['Precio']);
 
-    echo $precio . '<br />';
+    // echo $precio . '<br />';
 
     $query = $connection->prepare("INSERT INTO bien (id, direccion, ciudad_id, telefono, codigo_postal, bien_tipo_id, precio) 
     VALUES (:id, :direccion, :ciudad_id, :telefono, :codigo_postal, :bien_tipo_id, :precio)");
@@ -65,4 +66,7 @@ foreach ($data as $row) {
         ':precio' => $precio,
 
     ));
+
+    header("Location: index.php");
+    exit();
 }
