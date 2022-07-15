@@ -19,7 +19,7 @@ require_once("./db.php");
         <li><a href="#tabs-2">Mis bienes</a></li>
         <li><a href="#tabs-3">Reportes</a></li>
       </ul>
-      <div id="tabs-1">
+      <div id="tabs-1" style="width: 100%;">
         <?php
         include('./resultadosBusqueda.php')
         ?>

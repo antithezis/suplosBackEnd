@@ -66,7 +66,7 @@ foreach ($data as $row) {
         ':precio' => $precio,
 
     ));
-
-    header("Location: index.php");
-    exit();
 }
+
+header("Location: index.php");
+exit();

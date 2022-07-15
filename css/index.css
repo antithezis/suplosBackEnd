@@ -91,7 +91,7 @@ video#vidFondo {
   color: #648C7D;
 }
 .colContenido{
-  width: 75%;
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   align-content: space-between;
