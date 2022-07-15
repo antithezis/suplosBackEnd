@@ -39,9 +39,10 @@ $listTipos = $selectTipo->fetchAll(PDO::FETCH_ASSOC);
                     <?php } ?>
                 </select>
             </div>
-            <button name="exportar" class="button">
-                Eliminar
+            <button name="exportar" class="button"">
+                GENERAR EXCEL
             </button>
+           
         </div>
     </div>
 </form>

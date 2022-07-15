@@ -23,9 +23,9 @@ CREATE TABLE `ciudad` (
   `ciudad` VARCHAR(45) NULL,
   PRIMARY KEY (`id`));
 
-ALTER TABLE `bien` 
-ADD INDEX `fk_bien_bien_tipo_idx` (`bien_tipo_id` ASC) VISIBLE;
-;
+-- ALTER TABLE `bien` 
+-- ADD INDEX `fk_bien_bien_tipo_idx` (`bien_tipo_id` ASC) VISIBLE;
+-- ;
 ALTER TABLE `bien` 
 ADD CONSTRAINT `fk_bien_bien_tipo`
   FOREIGN KEY (`bien_tipo_id`)
@@ -33,9 +33,9 @@ ADD CONSTRAINT `fk_bien_bien_tipo`
   ON DELETE NO ACTION
   ON UPDATE NO ACTION;
 
-ALTER TABLE `bien` 
-ADD INDEX `fk_bien_ciudad_idx` (`ciudad_id` ASC) VISIBLE;
-;
+-- ALTER TABLE `bien` 
+-- ADD INDEX `fk_bien_ciudad_idx` (`ciudad_id` ASC) VISIBLE;
+-- ;
 ALTER TABLE `bien` 
 ADD CONSTRAINT `fk_bien_ciudad`
   FOREIGN KEY (`ciudad_id`)
